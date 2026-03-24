@@ -1,0 +1,12 @@
+/*
+*HelloApp UC1
+*
+*@author Dhanush
+*@version 1.0 
+*/
+
+public class HelloApp {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
