@@ -1,8 +1,8 @@
 /*
-*HelloApp UC4
+*HelloApp UC5
 *
 *@author Dhanush
-*@version 4.0 
+*@version 5.0 
 */
 
 public class HelloApp {
@@ -10,11 +10,13 @@ public class HelloApp {
         String name = "World";
 
         StringBuilder nameBuilder = new StringBuilder();
-        for (int i = 0; i < args.length; i++) {
-            nameBuilder.append(args[i]);
-            if (i < args.length - 1) {
+        boolean first = true;
+        for (String arg : args) {
+            if(!first){
                 nameBuilder.append(", ");
             }
+            nameBuilder.append(arg);
+            first = false;
             name = nameBuilder.toString();
         }
 
